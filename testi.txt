@@ -1,0 +1,10 @@
+*** Settings ***
+Library		OpenCVRobotLibrary
+
+
+*** Test Cases ***
+Test One
+	MatchTemplateSqDiff	./screen.png	./part.png
+
+Test Two
+	MatchTemplateCrossCorr	./screen.png	./part.png
